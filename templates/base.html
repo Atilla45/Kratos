@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Kratos</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="./items/kratos/assets/images/logo/logot.png" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/home.css' %}" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/LineIcons.3.0.css' %}" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/animate.css' %}" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/tiny-slider.css' %}" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/glightbox.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/main.css' %}" />
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/home.css' %}" />
+
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' %}"> -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css" />
+
+  <link rel="stylesheet" href="{% static 'items/kratos/assets/css/home.css" />
+  <!-- <link rel="stylesheet" href="{% static 'items/kratos/assets/css/bootstrap.css" /> -->
+</head>
+
+<body>
+  <!-- <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-icon">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div> -->
+  {% include 'components/navbar.html' %}
+  {% block content %}
+
+  {% endblock %}
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="{% static 'items/kratos/assets/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'items/kratos/assets/js/wow.min.js' %}"></script>
+  <script src="{% static 'items/kratos/assets/js/tiny-slider.js' %}"></script>
+  <script src="{% static 'items/kratos/assets/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'items/kratos/assets/js/count-up.min.js' %}"></script>
+  <script src="{% static 'items/kratos/assets/js/main.js' %}"></script>
+  <script src="{% static 'items/kratos/assets/js/home.js' %}"></script>
+  {% block javascript %}
+
+  {% endblock %}
+</body>
+
+</html>
