@@ -364,7 +364,7 @@
   </div>
 </section>
 <section class="promotion">
-  <!-- <div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="section-title">
@@ -377,54 +377,64 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
-        <div id="customers-testimonials" class="owl-carousel">
+      <div class='multiple-items'>
+        <div class="item">
+          <div class="shadow-effect">
+            <img class="img-size" src="{% static 'items/kratos/assets/images/promotion/promo-1.jpg' %}" alt="">
+          </div>
+        </div>
 
-          
-          <div class="item">
-            <div class="shadow-effect">
-              <img class="img-size" src="{% static 'items/kratos/assets/images/promo/promo-1.jpg' %}" alt="">
-            </div>
-          </div>
-       
-          <div class="item">
-            <div class="shadow-effect">
-              <img class="img-circle" src="{% static 'items/kratos/assets/images/promo/promo-2.jpg' %}" alt="">
-            </div>
-            
-          </div>
-     
-          <div class="item">
-            <div class="shadow-effect">
-              <img class="img-circle" src="{% static 'items/kratos/assets/images/promo/promo-3.jpg' %}" alt="">
-            </div>
+        <div class="item">
+          <div class="shadow-effect">
+            <img class="img-circle" src="{% static 'items/kratos/assets/images/promotion/promo-2.jpg' %}" alt="">
           </div>
 
-          <div class="item">
-            <div class="shadow-effect">
-              <img class="img-size" src="{% static 'items/kratos/assets/images/promo/promo-1.jpg' %}" alt="">
-            </div>
+        </div>
+
+        <div class="item">
+          <div class="shadow-effect">
+            <img class="img-circle" src="{% static 'items/kratos/assets/images/promotion/promo-3.jpg' %}" alt="">
           </div>
-       
-          <div class="item">
-            <div class="shadow-effect">
-              <img class="img-circle" src="{% static 'items/kratos/assets/images/promo/promo-2.jpg' %}" alt="">
-            </div>
-     
+        </div>
+
+        <div class="item">
+          <div class="shadow-effect">
+            <img class="img-size" src="{% static 'items/kratos/assets/images/promotion/promo-1.jpg' %}" alt="">
           </div>
-       
-          <div class="item">
-            <div class="shadow-effect">
-              <img class="img-circle" src="{% static 'items/kratos/assets/images/promo/promo-3.jpg' %}" alt="">
-            </div>
+        </div>
+
+        <div class="item">
+          <div class="shadow-effect">
+            <img class="img-circle" src="{% static 'items/kratos/assets/images/promotion/promo-2.jpg' %}" alt="">
+          </div>
+
+        </div>
+
+        <div class="item">
+          <div class="shadow-effect">
+            <img class="img-circle" src="{% static 'items/kratos/assets/images/promotion/promo-3.jpg' %}" alt="">
           </div>
         </div>
       </div>
     </div>
-  </div> -->
-  
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="row road-map-slider">
@@ -832,7 +842,13 @@
   <i class="lni lni-chevron-up"></i>
 </a>
 {% block javascript %}
-
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'items/kratos/assets/js/slick.js' %}"></script>
+<script src="{% static 'items/kratos/assets/js/slick.min.js' %}"></script>
 <script>
   //========= Road Map
   tns({
@@ -1019,5 +1035,18 @@
       }
     }
   });
+</script>
+<script>
+  $('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<button type="button" data-role="none" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" data-role="none" class="slick-next">Next</button>',
+    autoplay: false,
+    autoplaySpeed: 3000,
+
+  });
+
 </script>
 {% endblock %}
