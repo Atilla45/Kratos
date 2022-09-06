@@ -1687,8 +1687,8 @@ ol {
 
 .header .navbar-brand img {
     display: flex;
-    width: max-content;
-    height: max-content;
+    width: fit-content;
+    height: fit-content;
 }
 @media (min-width: 992px){
     .navbar-collapse.collapse {

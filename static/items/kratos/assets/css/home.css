@@ -9,7 +9,7 @@
 }
 .navbar-brand{
     display: flex;
-    width: 200px;
+    width: 130px;
     height: 200px;
     /* height: 210px !important; */
 }
@@ -39,4 +39,19 @@
 .canvas-item{
     width: 100%;
     min-width: 600px;
+}
+
+
+#padding_up{
+    margin-left: 15px !important;
+}
+
+.header  #sign_color {
+    background-color: #1956c7 !important;
+    color: white;
+}
+
+.header  #sign_color:hover{
+    background-color:white !important;
+    color:  #24126a ;
 }
